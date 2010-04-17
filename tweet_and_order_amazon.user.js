@@ -7,7 +7,7 @@
 // @license        MIT License
 // @version        0.1.0
 // @released       2010-04-15 23:00:00
-// @updated        2010-04-17 22:03:00
+// @updated        2010-04-17 22:07:00
 // @compatible     Greasemonkey 0.8.0+
 // @include        http://www.amazon.co.jp/*
 // @include        http://www.amazon.com/*
@@ -31,8 +31,6 @@ var save_aid = (function(conf) {
     };
 })(conf);
 
-//unsafeWindow.eval("alert('hoge');");
-
 /**
  * loader.js
  *  via. http://d.hatena.ne.jp/holidays-l/20070923/p1
@@ -55,8 +53,6 @@ clearInterval(timer);doNextEntry();},99);})();return function(callback){return f
 
     var $ = uw.jQuery;
     uw.twttr.anywhere("1", function(twitter) {
-        //$("body").append($("<div>").attr("id", "followme"));
-        //twitter("#followme").followButton("noriaki");
 
         var asin = $("#ASIN").attr("value"),
             title = $("#btAsinTitle").text(),
