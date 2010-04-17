@@ -7,7 +7,7 @@
 // @license        MIT License
 // @version        0.1.0
 // @released       2010-04-15 23:00:00
-// @updated        2010-04-17 22:31:00
+// @updated        2010-04-17 22:34:00
 // @compatible     Greasemonkey 0.8.0+
 // @include        http://www.amazon.co.jp/*
 // @require        http://github.com/noriaki/gm-update-checker/raw/master/gm-update-checker.js
@@ -19,16 +19,8 @@
 if(window !== window.top || window !== window.parent ||
    document.getElementsByTagName("body")[0].getAttribute("class") !== "dp") return;
 
-var conf = new ConfigHelper(),
-    img_twitter = GM_getResourceURL('img-twitter'),
+var img_twitter = GM_getResourceURL('img-twitter'),
     img_settings = GM_getResourceURL('img-settings');
-
-var save_aid = (function(conf) {
-    return function(aid) {
-        conf.val("amazon_affiliate_id", aid);
-        return conf.val("amazon_affiliate_id");
-    };
-})(conf);
 
 /**
  * loader.js
