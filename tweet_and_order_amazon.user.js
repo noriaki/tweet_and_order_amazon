@@ -7,10 +7,9 @@
 // @license        MIT License
 // @version        0.1.0
 // @released       2010-04-15 23:00:00
-// @updated        2010-04-17 22:07:00
+// @updated        2010-04-17 22:31:00
 // @compatible     Greasemonkey 0.8.0+
 // @include        http://www.amazon.co.jp/*
-// @include        http://www.amazon.com/*
 // @require        http://github.com/noriaki/gm-update-checker/raw/master/gm-update-checker.js
 // @resource       img-twitter http://github.com/noriaki/tweet_and_order_amazon/raw/master/twitter_logo_outline.png
 // @resource       img-settings http://github.com/noriaki/tweet_and_order_amazon/raw/master/settings.png
