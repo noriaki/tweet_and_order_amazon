@@ -5,9 +5,9 @@
 // @namespace      noriaki
 // @description    quick post message to twitter on amazon
 // @license        MIT License
-// @version        0.1.0
+// @version        0.1.1
 // @released       2010-04-15 23:00:00
-// @updated        2010-04-17 22:34:00
+// @updated        2010-04-21 23:09:00
 // @compatible     Greasemonkey 0.8.0+
 // @include        http://www.amazon.co.jp/*
 // @require        http://github.com/noriaki/gm-update-checker/raw/master/gm-update-checker.js
@@ -81,7 +81,7 @@ clearInterval(timer);doNextEntry();},99);})();return function(callback){return f
                             });
                             $("#tweet_box_placeholder").slideUp();
                             $(".twitter-anywhere-tweet-box").remove();
-                            bitly(build_url($("#taoa_amazon_affiliate_id").val()), function(shorturl) {
+                            bitly(build_url(asin, $("#taoa_amazon_affiliate_id").val()), function(shorturl) {
                                 build_tweetbox(shorturl);
                                 $("#tweet_box_placeholder").slideDown();
                             });
@@ -134,7 +134,7 @@ function log() {
 new UpdateChecker({
     script_name: 'Tweet and order Amazon'
     ,script_url: 'http://github.com/noriaki/tweet_and_order_amazon/raw/master/tweet_and_order_amazon.user.js'
-    ,current_version: '0.1.0'
+    ,current_version: '0.1.1'
     ,more_info_url: 'http://blog.fulltext-search.biz/archives/2010/04/greasemonkey-tweet-and-order-amazon.html'
 });
 
